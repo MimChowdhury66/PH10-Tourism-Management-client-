@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-
+import { Tooltip } from 'react-tooltip';
 const Header = () => {
     const { logout, user } = useContext(AuthContext);
 
@@ -30,8 +30,11 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
+                <Tooltip id="my-tooltip" />
+
+
                 {
-                    user ? <div className="dropdown dropdown-end tooltip tooltip-left z-[4]" data-tip={user?.displayName || 'name not found'}>
+                    user ? <div data-tooltip-id="my-tooltip" data-tooltip-place="left" data-tooltip-content={user?.displayName || 'name not found'} className="dropdown dropdown-end  z-[4]" >
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar " >
                             <div className="w-10 rounded-full "  >
                                 <img src={user?.photoURL || 'https://avatars.githubusercontent.com/u/86664820?v=4'} alt="" />
@@ -51,7 +54,7 @@ const Header = () => {
 
                 }
 
-              
+
 
 
 
