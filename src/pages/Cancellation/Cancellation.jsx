@@ -1,11 +1,14 @@
 import React from 'react';
+import { Slide } from "react-awesome-reveal";
 
 const Cancellation = () => {
     return (
         <div>
+
             <div className='text-center mt-2 lg:mt-10 bg-orange-100 p-10'>
-                <h1 className='lg:text-3xl font-bold'>Free cancellation</h1>
-                <p className='lg:text-xl font-semibold mt-3'>You'll receive a full refund if you cancel at least 24 <br /> hours in advance of most experiences.</p>
+                <Slide>  <h1 className='lg:text-3xl font-bold'>Free cancellation</h1>
+                    <p className='lg:text-xl font-semibold mt-3'>You'll receive a full refund if you cancel at least 24 <br /> hours in advance of most experiences.</p></Slide>
+
             </div>
             <div className='grid lg:flex'>
                 <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800">

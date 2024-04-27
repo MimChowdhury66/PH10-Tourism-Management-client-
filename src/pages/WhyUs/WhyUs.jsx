@@ -1,9 +1,11 @@
+import { Rotate } from "react-awesome-reveal";
 
 const WhyUs = () => {
     return (
         <div className="lg:mt-10 " >
-            <h1 className="lg:text-3xl font-bold text-center ">Why book with Trip.com?
-            </h1>
+            <Rotate><h1 className="lg:text-3xl font-bold text-center ">Why book with Trip.com?
+            </h1></Rotate>
+
             <section className="p-6 my-6 dark:bg-gray-100 dark:text-gray-800">
                 <div className="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4">
                     <div className="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-gray-50 dark:text-gray-800">
@@ -15,7 +17,7 @@ const WhyUs = () => {
                             </svg>
                         </div>
                         <div className="flex flex-col justify-center align-middle">
-                            <p className="text-3xl font-semibold leading-none">Free cancellation
+                            <p className="lg:text-3xl font-semibold leading-none">Free cancellation
                             </p>
                             <p className="capitalize">Stay flexible on your trip.
                             </p>
@@ -31,7 +33,7 @@ const WhyUs = () => {
                             </svg>
                         </div>
                         <div className="flex flex-col justify-center align-middle">
-                            <p className="text-3xl font-semibold leading-none">Trusted reviews
+                            <p className="lg:text-3xl font-semibold leading-none">Trusted reviews
                             </p>
                             <p className="capitalize">4.3 stars from 140,000+ Trustpilot reviews.</p>
                         </div>
@@ -48,7 +50,7 @@ const WhyUs = () => {
                             </svg>
                         </div>
                         <div className="flex flex-col justify-center align-middle">
-                            <p className="text-3xl font-semibold leading-none">300,000+ experiences
+                            <p className="lg:text-3xl font-semibold leading-none">300,000+ experiences
                             </p>
                             <p className="capitalize">Make memories around the world.
                             </p>
@@ -61,7 +63,7 @@ const WhyUs = () => {
                             </svg>
                         </div>
                         <div className="flex flex-col justify-center align-middle">
-                            <p className="text-3xl font-semibold leading-none">Reserve now, pay later
+                            <p className="lg:text-3xl font-semibold leading-none">Reserve now, pay later
                             </p>
                             <p className="capitalize">Book your spot.
                             </p>
