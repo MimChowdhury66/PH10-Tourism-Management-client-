@@ -85,9 +85,9 @@ const Header = () => {
                     </div> :
 
 
-                        <div className="flex gap-2">
-                            <Link to='/login'><button className="btn lg:text-xl bg-orange-400">Log In</button></Link>
-                            <Link to='/register'><button className="btn lg:text-xl bg-orange-400">Register</button></Link>
+                        <div className="flex gap-2 ">
+                            <Link to='/login'><button className="btn lg:text-xl text-white  bg-orange-400 ">Log In</button></Link>
+                            <Link to='/register'><button className="btn lg:text-xl text-white bg-orange-400">Register</button></Link>
                         </div>
 
                 }

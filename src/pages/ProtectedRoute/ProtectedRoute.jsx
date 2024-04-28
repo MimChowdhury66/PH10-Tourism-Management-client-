@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { AuthContext } from '../FirebaseProvider/FirebaseProvider';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 import { Navigate, useLocation } from 'react-router-dom';
 const ProtectedRoute = ({ children }) => {
     const { user, loading } = useContext(AuthContext);
