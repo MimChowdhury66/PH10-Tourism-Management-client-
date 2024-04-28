@@ -2,6 +2,9 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import swal from 'sweetalert';
+import {
+    Flip
+} from "react-awesome-reveal";
 
 const AddTouristsSpot = () => {
 
@@ -63,7 +66,9 @@ const AddTouristsSpot = () => {
     }
     return (
         <div className="bg-[#F4F3F0] p-5 lg:p-10">
-            <h1 className="text-center text-2xl font-bold mb-6">Add a Tourist Spot Here</h1>
+            <Flip
+            > <h1 className="text-center text-2xl font-bold mb-6">Add a Tourist Spot Here</h1></Flip
+            >
 
             {
                 user &&
@@ -117,7 +122,7 @@ const AddTouristsSpot = () => {
                             </div>
                             <div className="form-control lg:w-1/3">
                                 <label className="input input-bordered flex items-center gap-2">
-                                    Seasonality                         <input type="text" name="description" className="grow w-full" placeholder="Summer/Winter" {...register("Description")} />
+                                    Seasonality                         <input type="text" name="description" className="grow w-full" placeholder="Summer/Winter" {...register("Seasonality")} />
                                 </label>
                             </div>
                         </div>
