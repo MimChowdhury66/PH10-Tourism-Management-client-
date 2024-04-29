@@ -31,6 +31,7 @@ const SpotsCard = ({ spot }) => {
 
                     </div>
                 </div>
+                <button className="btn mt-3 bg-orange-400 text-white">View details</button>
             </div>
         </div>
     );
