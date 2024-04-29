@@ -19,6 +19,8 @@ import AddTouristsSpot from './pages/AddTouristsSpot/AddTouristsSpot';
 import ProtectedRoute from './pages/ProtectedRoute/ProtectedRoute';
 import AllSpot from './pages/AllSpot/AllSpot';
 import MyList from './pages/MyList/MyList';
+import UpdateSpot from './pages/UpdateSpot/UpdateSpot';
+import SpotDetails from './pages/SpotDetails/SpotDetails';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -51,6 +53,14 @@ const router = createBrowserRouter([
       {
         path: '/myList',
         element: <ProtectedRoute><MyList></MyList></ProtectedRoute>
+      },
+      {
+        path: '/updateSpot/:id',
+        element: <UpdateSpot></UpdateSpot>
+      },
+      {
+        path: '/spotDetails/:id',
+        element: <SpotDetails></SpotDetails>
       }
 
     ]

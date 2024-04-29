@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { Zoom } from "react-awesome-reveal";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-import MyListForm from "../MyListForm/MyListForm";
+import { Link } from "react-router-dom";
 
 const MyList = () => {
     const { user } = useContext(AuthContext);
@@ -21,7 +21,7 @@ const MyList = () => {
                 </Zoom>
             </div>
             <div className="overflow-x-auto">
-                <table className="table">
+                <table className="table table-zebra">
                     {/* head */}
                     <thead >
                         <tr >
@@ -43,10 +43,10 @@ const MyList = () => {
                                     <td>{spot.SpotName} </td>
                                     <td>${spot.AverageCost} </td>
                                     <td>{spot.TotalVisitor} </td>
-                                    <div className="flex gap-2 m-2">
-                                        <button className="btn">Update</button>
-                                        <button className="btn">Delete</button>
-                                    </div>
+                                    <td className="flex gap-2 m-2">
+                                        <Link to={`/updateSpot/${spot._id}`}><button className="btn text-white  bg-orange-400 ">Update</button></Link>
+                                        <button className="btn text-white  bg-black ">Delete</button>
+                                    </td>
                                 </tr>
                             ))
                         }

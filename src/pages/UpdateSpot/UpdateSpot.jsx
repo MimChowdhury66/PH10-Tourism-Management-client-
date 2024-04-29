@@ -1,13 +1,13 @@
+import React from 'react';
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import swal from 'sweetalert';
-import {
-    Flip
-} from "react-awesome-reveal";
+import { Flip } from "react-awesome-reveal";
 
-const AddTouristsSpot = () => {
 
+
+const UpdateSpot = () => {
     const { user } = useContext(AuthContext);
     const {
         register,
@@ -16,58 +16,20 @@ const AddTouristsSpot = () => {
     } = useForm();
 
 
-
-
     const onSubmit = data => {
         // console.log(data);
-        const newTourist = data;
-        console.log(newTourist);
-
-        // send data
-        fetch('http://localhost:5000/addSpot', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(newTourist)
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                if (data.insertedId) {
-                    swal({
-                        icon: "success",
-                        title: "Tourist Spot saved successfully",
-                    });
-                }
-            })
-
-        // send data
-        // fetch('http://localhost:5000/coffee', {
-        //     method: 'POST',
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(newCoffee)
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data);
-        //         if (data.insertedId) {
-        //             Swal.fire({
-        //                 icon: "success",
-        //                 title: "Coffee saved",
-        //             });
-        //         }
-        //     })
-
-
-
+        const newData = data;
+        console.log(newData);
     }
+    // update data
+
+
+
     return (
         <div className="bg-[#F4F3F0] p-5 lg:p-10">
             <Flip
-            > <h1 className="text-center text-2xl font-bold mb-6">Add a Tourist Spot Here</h1></Flip>
+            > <h1 className="text-center text-2xl font-bold mb-6">Update Your Data Here</h1></Flip>
+
 
             {
                 user &&
@@ -130,26 +92,11 @@ const AddTouristsSpot = () => {
                                 Description                         <input type="text" name="description" className="grow w-full" placeholder="Description" {...register("Description")} />
                             </label>
                         </div>
-                        <div className="grid lg:flex gap-3 w-full">
-                            <div className="form-control lg:w-1/2 ">
-                                <label className="input input-bordered flex items-center gap-2">
-                                    User Email
-                                    <input type="text" readOnly defaultValue={user.email}
-                                        name="email" className="grow w-full" placeholder="Email" {...register("Email")} />
-                                </label>
-                            </div>
-                            <div className="form-control lg:w-1/2">
-                                <label className="input input-bordered flex items-center gap-2">
-                                    User Name
-                                    <input type="text" readOnly defaultValue={user.displayName} name="user" className="grow w-full" placeholder="User Name" {...register("UserName")} />
-                                </label>
-                            </div>
-                        </div>
 
 
                     </div>
                     <div className=" flex justify-center w-full">
-                        <input type="submit" value="Add Tourist Spot" className="btn  w-1/2  text-white bg-orange-400 " />
+                        <input type="submit" value="Update Tourist Spot" className="btn  w-1/2  text-white bg-orange-400 " />
                     </div>
                 </form>
             }
@@ -158,4 +105,4 @@ const AddTouristsSpot = () => {
     );
 };
 
-export default AddTouristsSpot;
+export default UpdateSpot;
