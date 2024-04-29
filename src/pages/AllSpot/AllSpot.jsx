@@ -10,7 +10,7 @@ const AllSpot = () => {
     return (
         <div>
             <div className='text-center mt-2 mb-5 lg:mt-10'>
-                <Slide>  <h1 className='lg:text-3xl font-bold'>All Tourists Spot {spots.length} </h1>
+                <Slide>  <h1 className='lg:text-3xl font-bold'>All Tourists Spot </h1>
                 </Slide>
             </div>
 

@@ -41,16 +41,16 @@ const router = createBrowserRouter([
       },
       {
         path: '/addTouristsSpot',
-        element: <AddTouristsSpot></AddTouristsSpot>
+        element: <ProtectedRoute><AddTouristsSpot></AddTouristsSpot></ProtectedRoute>
       },
       {
         path: '/allTouristsSpot',
-        element: <AllSpot></AllSpot>,
-        loader:()=> fetch('http://localhost:5000/addSpot')
+        element: <ProtectedRoute><AllSpot></AllSpot></ProtectedRoute>,
+        loader: () => fetch('http://localhost:5000/addSpot')
       },
       {
         path: '/myList',
-        element: <MyList></MyList>
+        element: <ProtectedRoute><MyList></MyList></ProtectedRoute>
       }
 
     ]

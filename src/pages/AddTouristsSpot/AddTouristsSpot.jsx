@@ -135,14 +135,14 @@ const AddTouristsSpot = () => {
                             <div className="form-control lg:w-1/2 ">
                                 <label className="input input-bordered flex items-center gap-2">
                                     User Email
-                                    <input type="text" defaultValue={user.email}
+                                    <input type="text" readOnly defaultValue={user.email}
                                         name="email" className="grow w-full" placeholder="Email" {...register("Email")} />
                                 </label>
                             </div>
                             <div className="form-control lg:w-1/2">
                                 <label className="input input-bordered flex items-center gap-2">
                                     User Name
-                                    <input type="text" defaultValue={user.displayName} name="user" className="grow w-full" placeholder="User Name" {...register("UserName")} />
+                                    <input type="text" readOnly defaultValue={user.displayName} name="user" className="grow w-full" placeholder="User Name" {...register("UserName")} />
                                 </label>
                             </div>
                         </div>
