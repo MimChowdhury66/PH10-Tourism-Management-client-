@@ -1,5 +1,5 @@
 # Trip.cpm
-Live site url: 
+Live site url: https://tourism-management-4e4e3.web.app/
 
 ## Motto- Keep things flexible, Explore Various Attractions And Things To Do On Your Vacation.
 
