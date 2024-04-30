@@ -12,7 +12,7 @@ const CountrySection = () => {
     }, [])
     return (
         <div className="lg:mt-10 mb-10">
-            <Fade><h1 className="lg:text-3xl font-bold text-center mb-5">Top Destinations
+            <Fade><h1 className="lg:text-3xl font-bold text-center mb-5">Top Destinations..
             </h1></Fade>
 
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-5'>
