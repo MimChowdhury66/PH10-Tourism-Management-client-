@@ -21,6 +21,7 @@ import AllSpot from './pages/AllSpot/AllSpot';
 import MyList from './pages/MyList/MyList';
 import UpdateSpot from './pages/UpdateSpot/UpdateSpot';
 import SpotDetails from './pages/SpotDetails/SpotDetails';
+import CountrySpot from './pages/CountrySpot/CountrySpot';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -61,6 +62,11 @@ const router = createBrowserRouter([
       {
         path: '/spotDetails/:id',
         element: <ProtectedRoute><SpotDetails></SpotDetails></ProtectedRoute>
+      },
+      {
+        path: '/countrySpot/:countryName',
+        element: <CountrySpot></CountrySpot>
+
       }
 
     ]

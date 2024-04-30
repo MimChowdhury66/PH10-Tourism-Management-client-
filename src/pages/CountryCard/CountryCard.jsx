@@ -25,7 +25,8 @@ const CountryCard = ({ country }) => {
 
                     </div>
                 </div>
-                <button className="btn mt-3 bg-orange-400 text-white">View Spots</button>
+                <Link to={`http://localhost:5000/country/${CountryName}`}> <button className="btn mt-3 bg-orange-400 text-white">View Spots</button></Link>
+
                 {/* <Link to={`/spotDetails/${_id}`}><button className="btn mt-3 bg-orange-400 text-white">View details</button></Link> */}
             </div>
         </div>
