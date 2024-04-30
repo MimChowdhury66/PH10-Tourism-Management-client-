@@ -49,7 +49,7 @@ const router = createBrowserRouter([
       {
         path: '/allTouristsSpot',
         element: <ProtectedRoute><AllSpot></AllSpot></ProtectedRoute>,
-        loader: () => fetch('http://localhost:5000/addSpot')
+        loader: () => fetch('https://tourism-management-server-two.vercel.app/addSpot')
       },
       {
         path: '/myList',
