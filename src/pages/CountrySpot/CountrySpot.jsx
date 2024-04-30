@@ -7,7 +7,7 @@ const CountrySpot = () => {
     console.log(countryName);
     const [spots, setSpots] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/country/${countryName}`)
+        fetch(`https://tourism-management-server-two.vercel.app/country/${countryName}`)
             .then(res => res.json())
             .then(data => setSpots(data))
     }, [])

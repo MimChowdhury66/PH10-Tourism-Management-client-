@@ -10,7 +10,7 @@ const MyList = () => {
     const [deleted, setDeleted] = useState(false);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myList/${user?.email}`)
+        fetch(`https://tourism-management-server-two.vercel.app/myList/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 setSpots(data)
@@ -31,7 +31,7 @@ const MyList = () => {
         })
             .then((result) => {
                 if (result.isConfirmed) {
-                    fetch(`http://localhost:5000/delete/${id}`, {
+                    fetch(`https://tourism-management-server-two.vercel.app/delete/${id}`, {
                         method: 'DELETE',
 
                     })

@@ -18,7 +18,7 @@ const SpotDetails = () => {
 
     } = spots;
     useEffect(() => {
-        fetch(`http://localhost:5000/singleSpot/${id}`)
+        fetch(`https://tourism-management-server-two.vercel.app/singleSpot/${id}`)
             .then(res => res.json())
             .then(data => setSpots(data)
             )
