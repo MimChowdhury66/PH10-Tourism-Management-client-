@@ -60,7 +60,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/spotDetails/:id',
-        element: <SpotDetails></SpotDetails>
+        element: <ProtectedRoute><SpotDetails></SpotDetails></ProtectedRoute>
       }
 
     ]
