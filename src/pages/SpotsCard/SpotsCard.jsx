@@ -6,6 +6,11 @@ const SpotsCard = ({ spot }) => {
     } = spot;
     return (
         <div>
+         
+            
+
+
+
             {/* card */}
             <div className="max-w-lg p-4 shadow-md bg-gray-50 text-gray-800">
                 <div className="flex justify-between pb-4 border-bottom">
