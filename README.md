@@ -40,6 +40,22 @@ Live site url: https://tourism-management-4e4e3.web.app/
 - **Update Profile** 
  1.  User can update information in this route
 
+## Technologies 
+1. Reactjs
+2. Nodejs
+3. Expressjs
+4. Mongodb
+5. Firebase
+6. Tailwindcss
+7. DaisyUi
+8. MambaUi
+
+
+## If cloned,follow these steps to run locally
+1.npm i
+2.npm run dev
+
+
 ## npm package name which is used for the challenges task
 1. react-awesome-reveal
 2. Swipper slider
